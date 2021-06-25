@@ -3,3 +3,5 @@ setup:
 
 start:
 	npx dev
+
+.PHONY: setup
