@@ -6,6 +6,12 @@ background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presen
 
 # Slidev Theme Starter
 
+
+---
+layout: image
+image: ../assets/vm.png
+---
+
 Presentation slides for developers
 
 ---

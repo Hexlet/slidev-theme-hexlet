@@ -190,3 +190,9 @@ h1 {
 /* tr:not(:last-of-type) td { */
 /*     border-bottom: 1px solid var(--accents-2); */
 /* } */
+
+.slidev-layout {
+    h1 + p {
+        @apply opacity-0;
+    }
+}

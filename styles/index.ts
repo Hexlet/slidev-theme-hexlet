@@ -10,4 +10,4 @@ import '@slidev/theme-default/styles/index.ts'
 // import 'codemirror-theme-vars/base.css'
 // import 'prism-theme-vars/to-codemirror.css'
 
-import './application.css'
+import './application.scss'
