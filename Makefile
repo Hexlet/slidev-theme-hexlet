@@ -2,6 +2,9 @@ setup:
 	npm i
 
 start:
-	npx dev
+	npm run dev
+
+publish:
+	npx release-it
 
 .PHONY: setup

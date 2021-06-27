@@ -1,17 +1,15 @@
 ---
 theme: ./
+layout: cover
+background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-cover.png
 ---
 
 # Slidev Theme Starter
 
 Presentation slides for developers
 
-<div class="pt-12">
-  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
+---
+background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-common.png
 ---
 
 # What is Slidev?
@@ -48,13 +46,15 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd> | next slide |
 
 ---
-layout: image-right
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+layout: two-cols-right-full
+background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-common.png
 ---
 
 # Code
 
 Use code snippets and get the highlighting directly!
+
+::right::
 
 ```ts
 interface User {
@@ -73,9 +73,14 @@ function updateUser(id: number, update: Partial<User>) {
 
 ---
 layout: center
-class: "text-center"
+class: 'text-center'
+background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-center.png
 ---
 
 # Learn More
 
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+
+---
+layout: hexlet-next
+---
