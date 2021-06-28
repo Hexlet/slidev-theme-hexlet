@@ -1,7 +1,7 @@
 ---
 theme: ./
 layout: cover
-background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-cover.png
+background: 'cover'
 ---
 
 # Slidev Theme Starter
@@ -15,7 +15,7 @@ image: ../assets/vm.png
 Presentation slides for developers
 
 ---
-background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-common.png
+background: 'common'
 ---
 
 # What is Slidev?
@@ -53,7 +53,7 @@ Hover on the bottom-left corner to see the navigation's controls panel
 
 ---
 layout: two-cols-right-full
-background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-common.png
+background: 'common'
 ---
 
 # Code
@@ -80,7 +80,7 @@ function updateUser(id: number, update: Partial<User>) {
 ---
 layout: center
 class: 'text-center'
-background: https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-center.png
+background: 'center'
 ---
 
 # Learn More

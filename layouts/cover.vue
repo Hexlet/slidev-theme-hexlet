@@ -8,7 +8,6 @@ const props = defineProps({
   },
 })
 
-
 const style = computed(() => handleBackground(props.background))
 </script>
 
