@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from 'lodash'
 
 const preparedBackgroundUrls = {
   cover: 'https://raw.githubusercontent.com/Hexlet/assets/master/images/presentation-background-cover.png',
@@ -7,7 +7,7 @@ const preparedBackgroundUrls = {
 };
 
 export function handleBackground(maybeUrl: string): CSSProperties {
-  let url = _.get(preparedBackgroundUrls, maybeUrl, maybeUrl);
+  const url = _.get(preparedBackgroundUrls, maybeUrl, maybeUrl)
   const style = {
     background: `url(${url})`,
     backgroundRepeat: 'no-repeat',
