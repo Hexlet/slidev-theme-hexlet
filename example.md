@@ -88,5 +88,6 @@ background: 'center'
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
 
 ---
-layout: hexlet-next
+layout: final 
+background: 'center'
 ---
