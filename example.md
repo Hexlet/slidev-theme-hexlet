@@ -89,4 +89,5 @@ background: 'center'
 
 ---
 layout: hexlet-next
+background: 'center'
 ---
