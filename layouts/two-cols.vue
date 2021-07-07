@@ -6,6 +6,9 @@ const props = defineProps({
   class: {
     type: String,
   },
+  title: {
+    type: String,
+  },
   background: {
     default: '',
   },
@@ -16,7 +19,7 @@ const style = computed(() => handleBackground(props.background))
 
 <template>
   <div :style="style" class="slidev-layout">
-    <h1>Wow{{ props.title }}</h1>
+    <h1>{{ props.title }}</h1>
     <div class="two-columns w-full h-full grid grid-cols-2">
       <div class="col-left" :class="props.class">
         <slot />

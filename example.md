@@ -90,7 +90,7 @@ background: 'center'
 ---
 layout: two-cols
 background: common
-title: Wow
+title: My Title
 ---
 
 - one
