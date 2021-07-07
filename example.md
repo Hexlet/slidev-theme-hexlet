@@ -88,6 +88,22 @@ background: 'center'
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
 
 ---
+layout: two-cols
+background: common
+title: Wow
+---
+
+- one
+- two
+- three
+
+::right::
+
+- four
+- five
+- six
+
+---
 layout: hexlet-next
 background: 'center'
 ---
