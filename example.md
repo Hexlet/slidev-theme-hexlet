@@ -6,7 +6,6 @@ background: 'cover'
 
 # Slidev Theme Starter
 
-
 ---
 layout: image
 image: ../assets/vm.png
