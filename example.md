@@ -104,5 +104,4 @@ title: My Title
 
 ---
 layout: hexlet-next
-background: ../assets/hexlet-next.png
 ---
