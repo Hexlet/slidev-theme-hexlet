@@ -8,7 +8,7 @@ background: 'cover'
 
 ---
 layout: image
-image: ../assets/vm.png
+image: /vm.png
 ---
 
 Presentation slides for developers

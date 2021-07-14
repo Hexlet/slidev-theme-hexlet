@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps, computed } from 'vue'
 import { handleBackground } from '../layoutHelper'
-const style = computed(() => handleBackground('../assets/hexlet-next.png'))
+const style = computed(() => handleBackground('/hexlet-next.png'))
 </script>
 
 <template>
