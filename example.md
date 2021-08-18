@@ -51,11 +51,43 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd> | next slide |
 
 ---
+background: common
+---
+
+# Code
+
+<div class="code-text-xl">
+
+```dockerfile
+RUN one
+RUN two
+RUN threeee
+```
+
+</div>
+
+---
+background: common
+---
+
+# Code (Lines)
+
+<div class="code-text-xl">
+
+```dockerfile {2|2,3}
+RUN one
+RUN two
+RUN threeee
+```
+
+</div>
+
+---
 layout: two-cols-right-full
 background: 'common'
 ---
 
-# Code
+# Code Two Cols
 
 Use code snippets and get the highlighting directly!
 
