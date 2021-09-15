@@ -28,19 +28,21 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
-    "@slidev/theme-default": "^0.19.1",
-    "@slidev/types": "^0.22.7",
-    "@vueuse/motion": "^1.5.6",
+    "@slidev/theme-default": "^0.21.0",
+    "@slidev/types": "^0.23.0",
+    "@vueuse/motion": "^1.6.0",
+    "@vueuse/shared": "^6.3.3",
     "codemirror-theme-vars": "^0.1.1",
     "lodash": "^4.17.21",
-    "npm-check-updates": "^11.8.3",
+    "npm-check-updates": "^11.8.5",
     "prism-theme-vars": "^0.2.2",
     "release-it": "^14.11.5",
-    "sass": "^1.38.0",
-    "theme-vitesse": "^0.1.12"
+    "sass": "^1.41.0",
+    "theme-vitesse": "^0.1.12",
+    "vue-demi": "^0.11.4"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.22.7",
+    "@slidev/cli": "^0.23.0",
     "@types/lodash": "^4.14.172"
   }
 }
