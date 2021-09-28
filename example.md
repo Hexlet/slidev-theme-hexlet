@@ -2,42 +2,138 @@
 theme: ./
 layout: cover
 background: 'cover'
+class: 'text-center'
 ---
 
-# Slidev Theme Starter
+# Наша крутая тема урока
+## Хекслет, hexlet.io
 
 ---
-layout: image
-image: /vm.png
+layout: center
+background: center
 ---
 
-Presentation slides for developers
+# План
+
+* Сначала сделаем первое
+* Потом сделаем второе
+* Ну и третье наверное надо
+* А потом как четвертое произойдет, ухх
+
+---
+background: center
+layout: center
+---
+
+# Просто слайд
+## с умной мыслью в центре
+
+---
+background: center
+layout: center
+---
+
+# Уже более интересный слайд с кликами
+
+<v-clicks>
+
+* Клик, и появилось это
+* А потом вот это
+* Ну и куда уж без этого?
+* Магия какая-то, да? Прям как руби-дуриловка
+
+</v-clicks>
+
+---
+background: common
+---
+
+# Просто слайд с примером кода
+
+<div class="code-text-xl">
+
+```dockerfile
+WORKDIR /root/hexlet-basics
+
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+
+COPY Gemfile .
+COPY Gemfile.lock .
+RUN bundle install --jobs $(nproc)
+
+COPY . .
+
+RUN NODE_ENV=production bin/rails assets:precompile
+```
+
+</div>
+
+
+---
+background: common
+---
+
+# Тот же код, но с крутым выделением кода при кликах
+
+<div class="code-text-xl">
+```dockerfile {all|3-5|11}
+WORKDIR /root/hexlet-basics
+
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+
+COPY Gemfile .
+COPY Gemfile.lock .
+RUN bundle install --jobs $(nproc)
+
+COPY . .
+
+RUN NODE_ENV=production bin/rails assets:precompile
+```
+</div>
+
+---
+background: common
+---
+
+# Еще более интересное выделение
+
+<div class="code-text-xl">
+
+```yml {all|3,4,8|3,4,8,13,14|5,9|6,7|11,12|10}
+version: '3'
+
+services:
+  db: # Имя сервиса одновременно является dns именем
+    image: postgres:13.3 # Используется готовый образ
+    environment: # Беспарольный доступ
+      POSTGRES_HOST_AUTH_METHOD: trust
+  web:
+    build: . # По умолчанию использует Dockerfile
+    command: npm run dev # Старт сервера
+    volumes:
+      - .:/app # /app – рабочая директория внутри
+    depends_on:
+      - db # Зависит от базы данных
+```
+
+</div>
 
 ---
 background: 'common'
 ---
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<!-- Просто картинка -->
+![image1](assets/virtualization.png)
 
 
 ---
+background: common
+---
 
-# Navigation
+# Навигация (ну и пример с таблицей)
 
 Hover on the bottom-left corner to see the navigation's controls panel
 
@@ -52,88 +148,13 @@ Hover on the bottom-left corner to see the navigation's controls panel
 
 ---
 background: common
----
-
-# Code
-
-<div class="code-text-xl">
-
-```dockerfile
-RUN one
-RUN two
-RUN threeee
-```
-
-</div>
-
----
-background: common
----
-
-# Code (Lines)
-
-<div class="code-text-xl">
-
-```dockerfile {2|2,3}
-RUN one
-RUN two
-RUN threeee
-```
-
-</div>
-
----
-layout: two-cols-right-full
-background: 'common'
----
-
-# Code Two Cols
-
-Use code snippets and get the highlighting directly!
-
-::right::
-
-```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = {...user, ...update}  
-  saveUser(id, newUser)
-}
-```
-
----
 layout: center
-class: 'text-center'
-background: 'center'
 ---
 
-# Learn More
+# Больше раскладок и примеров на сайте sli.dev
+## https://sli.dev/guide/syntax.html
 
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
-
----
-layout: two-cols
-background: common
-title: My Title
----
-
-- one
-- two
-- three
-
-::right::
-
-- four
-- five
-- six
-
+<!-- Последний слайд всегда оставляем `hexlet-next` -->
 ---
 layout: hexlet-next
 ---
