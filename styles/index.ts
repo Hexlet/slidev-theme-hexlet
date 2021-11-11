@@ -3,7 +3,7 @@
 // import '@slidev/client/styles/index.css'
 // import '@slidev/client/styles/code.css'
 // import '@slidev/client/styles/layouts-base.css'
-import '@slidev/theme-default/styles/index.ts'
+// import '@slidev/theme-default/styles/index.ts'
 // import '@slidev/client/styles/layouts-base.css'
 // import './layout.css'
 
