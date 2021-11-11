@@ -33,6 +33,20 @@ background: center
 layout: center
 ---
 
+# Просто слайд
+
+с умной мыслью в центре, она не такая умная и короткая, как на первом слайде, но более интересная и большая, как на этом
+
+А после можно расположить список, например:
+
+* Сначала сделаем первое
+* Потом сделаем второе
+
+---
+background: center
+layout: center
+---
+
 # Уже более интересный слайд с кликами
 
 <v-clicks>
@@ -119,8 +133,43 @@ services:
     depends_on:
       - db # Зависит от базы данных
 ```
-
 </div>
+
+---
+background: 'common'
+layout: two-cols-right-full
+---
+
+# Слайд с разделением на 2 полосы
+
+* первый пункт
+* второй пункт
+* третий пункт
+* и финальный пункт
+
+::right::
+
+```shell
+# Процесс работы без Docker Compose
+
+# Для связи контейнеров нужно создавать общую сеть
+docker network create hexlet-basics
+
+# Ручная сборка
+
+# Быстрая сборка без установки зависимостей и приложения во внутрь
+docker build -f Dockerfile.development -t hexlet
+
+# Запускается как демон, чтобы не мешать работе с другими
+docker run -d -rm \
+  --name hexlet-postgres \
+  --network hexlet-development \
+  -e POSTGRES_PASSWORD=mysecretpassword \
+  -e PGDATA=/var/lib/postgresql/data/pgdata \
+  -v /custom/mount:/var/lib/postgresql/data \
+  postgres
+
+```
 
 ---
 background: 'common'
