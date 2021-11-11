@@ -12,9 +12,7 @@ const style = computed(() => handleBackground(props.background))
 </script>
 
 <template>
-  <div class="slidev-layout cover" :style="style">
-    <div class="my-auto text-center w-full">
-      <slot />
-    </div>
+  <div class="slidev-layout cover text-center w-full place-content-center" :style="style">
+    <slot />
   </div>
 </template>

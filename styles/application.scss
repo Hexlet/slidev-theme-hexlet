@@ -217,11 +217,20 @@ html.dark {
   background: #1b1b1b !important;
 }
 
+.slidev-layout {
+  > * {
+    @apply flex-shrink-0;
+  }
+}
+
 .slidev-code {
-    @apply border;
-    @apply -m-10;
+  @apply border h-full;
+}
+
+.code-text-xl {
+  @apply flex-grow;
 }
 
 .code-text-xl .slidev-code code {
-    @apply text-xl;
+  @apply text-xl;
 }

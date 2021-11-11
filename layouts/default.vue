@@ -13,9 +13,7 @@ const style = computed(() => handleBackground(props.background))
 </script>
 
 <template>
-  <div :style="style" class="slidev-layout">
-    <div class="my-auto">
-      <slot />
-    </div>
+  <div :style="style" class="slidev-layout flex flex-col">
+    <slot />
   </div>
 </template>

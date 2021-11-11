@@ -14,8 +14,6 @@ const style = computed(() => handleBackground(props.background))
 
 <template>
   <div :style="style" class="slidev-layout center h-full grid place-content-center">
-    <div class="my-auto">
-      <slot />
-    </div>
+    <slot />
   </div>
 </template>
