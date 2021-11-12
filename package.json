@@ -1,5 +1,5 @@
 {
-  "name": "@hexlet/slidev-theme-hexlet",
+  "name": "slidev-theme-hexlet",
   "version": "0.0.14",
   "engines": {
     "node": ">=14.0.0",
