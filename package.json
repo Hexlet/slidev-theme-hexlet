@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-hexlet",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "engines": {
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
